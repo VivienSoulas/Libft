@@ -55,7 +55,6 @@ CFLAGS = -Wall -Werror -Wextra
 
 # defautl if no arguments given with make 
 all: $(NAME)
-	@echo "libft.a created"
 
 # link the library/create a static library
 # ar creates the archive
@@ -81,16 +80,13 @@ $(NAME): $(OBJECTS)
 # clean object files
 clean:
 	@rm -f $(OBJECTS) $(OBJECTS_BONUS)
-	@echo "objects files removed"
 
 # clean all
 fclean: clean
 	@rm -f $(NAME)
-	@echo "program files removed"
 
 # clean all and rebuild
 re: fclean all
 
 bonus: $(OBJECTS) $(OBJECTS_BONUS)
 	@ar rcs $(NAME) $(OBJECTS) $(OBJECTS_BONUS)
-	@echo "Bonus compiled"

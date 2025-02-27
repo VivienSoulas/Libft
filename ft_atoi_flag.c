@@ -6,20 +6,17 @@
 /*   By: vsoulas <vsoulas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 11:58:51 by vsoulas           #+#    #+#             */
-/*   Updated: 2025/02/27 12:00:36 by vsoulas          ###   ########.fr       */
+/*   Updated: 2025/02/27 15:14:47 by vsoulas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #include "libft.h"
 
 // int	ft_atoi(const char *nptr);
-
 // int	main(void)
 // {
 // 	char	*nptr = NULL;
 //	int		error = 0;
-
 // 	printf("%d\n", ft_atoi(nptr, &error));
 // 	return (0);
 // }
