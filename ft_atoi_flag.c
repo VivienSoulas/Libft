@@ -6,7 +6,7 @@
 /*   By: vsoulas <vsoulas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/02/27 11:58:51 by vsoulas           #+#    #+#             */
-/*   Updated: 2025/02/27 15:14:47 by vsoulas          ###   ########.fr       */
+/*   Updated: 2025/10/16 09:35:14 by vsoulas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@
 // {
 // 	char	*nptr = NULL;
 //	int		error = 0;
-// 	printf("%d\n", ft_atoi(nptr, &error));
+// 	printf("%d\n", ft_atoi_flag(nptr, &error));
 // 	return (0);
 // }
 

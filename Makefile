@@ -1,12 +1,16 @@
 # Variable
-SOURCES =   ft_atoi.c \
+SOURCES =   ft_atoi_flag.c \
+			ft_atoi.c \
 			ft_bzero.c \
 			ft_calloc.c \
 			ft_isalnum.c \
 			ft_isalpha.c \
 			ft_isascii.c \
 			ft_isdigit.c \
+			ft_islower.c \
+			ft_isnum.c \
 			ft_isprint.c \
+			ft_isupper.c \
 			ft_itoa.c \
 			ft_memchr.c \
 			ft_memcmp.c \
@@ -44,9 +48,12 @@ SOURCES_BONUS = ft_lstnew_bonus.c \
 				ft_lstiter_bonus.c \
 				ft_lstmap_bonus.c
 
-OBJECTS = $(SOURCES:.c=.o)
+OBJ_DIR	=	objects
+OBJ_BON_DIR	=	objects_bonus
 
-OBJECTS_BONUS = $(SOURCES_BONUS:.c=.o)
+OBJECTS = $(SOURCES:%.c=$(OBJ_DIR)/%.o)
+
+OBJECTS_BONUS = $(SOURCES_BONUS:%.c=$(OBJ_BON_DIR/%).o)
 
 NAME = libft.a
 
@@ -72,14 +79,15 @@ $(NAME): $(OBJECTS)
 # -c = tells the compiler to compile the source file into an object file -o
 # $< = first prerequisite (aka : the source file being compiled)
 # $@ = target name (aka : object file)
-%.o: %.c
+$(OBJ_DIR)/%.o:%.c
+	@mkdir -p $(OBJ_DIR)
 	@$(CC) $(CFLAGS) -c $< -o $@
 
 .PHONY: all clean fclean re bonus
 
 # clean object files
 clean:
-	@rm -f $(OBJECTS) $(OBJECTS_BONUS)
+	@rm -rf $(OBJ_DIR) $(OBJ_BON_DIR)
 
 # clean all
 fclean: clean
