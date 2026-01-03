@@ -6,7 +6,7 @@
 /*   By: vsoulas <vsoulas@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/10/24 09:08:56 by vsoulas           #+#    #+#             */
-/*   Updated: 2024/10/28 09:56:31 by vsoulas          ###   ########.fr       */
+/*   Updated: 2025/02/27 15:15:13 by vsoulas          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,16 +14,15 @@
 
 #include "libft.h"
 
-// void	ft_putnbr_fd(int n, int fd);
-//void	ft_putchar_fd(char s, int fd);
-//void	ft_putstr_fd(char *s, int fd);
+void	ft_putnbr_fd(int n, int fd);
+void	ft_putchar_fd(char s, int fd);
+void	ft_putstr_fd(char *s, int fd);
 
 //int	main(void)
 //{
 //	int	max;
 //	int	min;
 //	int	fd;
-
 //	max = INT_MAX;
 //	min = INT_MIN;
 //	fd = open("nb.txt", O_RDWR | O_CREAT);
